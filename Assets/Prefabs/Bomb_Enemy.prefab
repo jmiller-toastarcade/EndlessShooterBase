@@ -51,6 +51,7 @@ MonoBehaviour:
   RotationSpeed: 90
   TagName: Player
   LifeTime: 5
+  Damage: 5
 --- !u!212 &4721357758018416370
 SpriteRenderer:
   m_ObjectHideFlags: 0

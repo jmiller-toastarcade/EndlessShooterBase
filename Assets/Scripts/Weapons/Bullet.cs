@@ -6,6 +6,7 @@ public class Bullet : MonoBehaviour
     public float BulletSpeed = 10.0f;
     public string TagName;
     public float LifeTime = 2.0f;
+    public int Damage;
 
     private void Start()
     {
@@ -21,6 +22,11 @@ public class Bullet : MonoBehaviour
     {
         if (other.CompareTag(TagName))
         {
+            var health = other.gameObject.GetComponent<Health>();
+            if (health != null)
+            {
+                health.TakeDamage(Damage);
+            }
             Destroy(this.gameObject);
         }
     }

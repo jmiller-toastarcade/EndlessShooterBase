@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6077645712168095318}
   - component: {fileID: 7100188637027580198}
   - component: {fileID: 8724249312401356236}
+  - component: {fileID: 5173455205398182335}
   - component: {fileID: 7562217729303110340}
   - component: {fileID: 3651325388827168788}
   m_Layer: 0
@@ -50,7 +51,6 @@ MonoBehaviour:
   MoveSpeed: 1
   MoveDirection: {x: 0, y: -1}
   RotationSpeed: 90
-  CameraBounds: 10
 --- !u!212 &8724249312401356236
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -109,6 +109,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &5173455205398182335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8115580842295006978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc8bf0fa79b0b46488e24ac4a183ff6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Health
+  MaxHealth: 0
+  DeathVFX: {fileID: 2900276530709051378, guid: 6ece74b92bebd2e4ab85a0b4e81cf3c7, type: 3}
 --- !u!60 &7562217729303110340
 PolygonCollider2D:
   m_ObjectHideFlags: 0

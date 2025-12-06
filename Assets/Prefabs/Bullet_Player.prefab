@@ -107,6 +107,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Bullet
   BulletSpeed: 10
   TagName: Enemy
+  LifeTime: 2
+  Damage: 1
 --- !u!70 &7500317947622476127
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
